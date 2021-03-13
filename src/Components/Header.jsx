@@ -29,14 +29,10 @@ export default function Header(){
             <div className="Busqueda">
                 <div className="Search-container">
                     <FontAwesomeIcon className="btn"icon={faSearch}/>
-                    <input type="text" placeholder="Buscar"/>
-                    <div className="i">
-                        <FontAwesomeIcon className="icono-avatar" icon={faUserCircle}/>
-                    </div>
+                    <input type="text" placeholder="Buscar"/>                    
+                    <img src="https://m.media-amazon.com/images/G/02/CerberusPrimeVideo-FN38FSBD/adult-1.png" alt="avatar-amazon" className="icono-avatar"/>                                            
                     <p>Luis</p>
-                </div>
-                
-                
+                </div>                               
             </div>
             
            
