@@ -1,4 +1,120 @@
-body{
+.Header-Container{
+    display: flex;    
+    width: 100%;
+    height: 80px;
+    justify-content:flex-start;
+    background-color: black;
     padding: 0;
     margin: 0;
+}
+.Logo{
+    display: flex;               
+    width: 200px;
+    height: 100%;
+    margin-left: 50px;
+    background-image: url("../Img/video.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(128, 109, 109, 0.5);
+}
+
+.Menu{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 100%;
+    background-color: black;
+}
+.Menu ul{
+    display: flex;
+    
+}
+.Menu ul li {
+    list-style: none;
+}
+.Menu ul li a:hover{
+    background-color: #0f0f0fe0;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s cubic-bezier(.46,.08,.29,.86) 0s;
+    
+
+}
+.item{
+    display: flex;    
+    font-size: 17px;
+    color: rgb(238, 228, 228);
+    padding-right: 10px;
+}
+
+.Busqueda{
+    display: flex;
+    width: 465px;
+    height: 100%;    
+    background-color: rgb(238, 180, 180);    
+}
+.Search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.Search-container p{
+    color: grey;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.Busqueda .icono-avatar{
+    color: rgb(53, 53, 233);
+    width: 40px;
+    height: 100px;
+}
+.Busqueda input{
+    width: 0px;
+    height: 0px;
+    color: black;
+    text-align: center;
+    margin-right: 10px;
+    border:1px solid silver;  
+    border-radius: 5px;  
+    outline: none;
+    transition: all 0.5s ease ;
+    opacity: 0.1;
+    
+}
+.Busqueda .i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(155, 155, 236);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+.Busqueda .btn{
+    color: white;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    
+    cursor: pointer;
+    
+    
+}
+.Busqueda:hover input{
+    width: 200px;
+    height: 20px;
+    opacity: 1;
+}
+.Busqueda .icon:hover{
+    height: 25px;
+    background-color: rgba(14, 13, 13,.5);
+    color: rgb(255, 255, 255);
+    transition: all 0.5s cubic-bezier(.46,.08,.29,.86) 0s;
+    
 }
