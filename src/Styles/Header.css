@@ -92,11 +92,8 @@
     top: 0;
     right: 0;
     width: 50px;
-    height: 40px;
-    
-    cursor: pointer;
-    
-    
+    height: 40px;    
+    cursor: pointer;            
 }
 .Busqueda:hover input{
     width: 200px;

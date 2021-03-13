@@ -30,7 +30,10 @@ export default function Header(){
                 <div className="Search-container">
                     <FontAwesomeIcon className="btn"icon={faSearch}/>
                     <input type="text" placeholder="Buscar"/>                    
-                    <img src="https://m.media-amazon.com/images/G/02/CerberusPrimeVideo-FN38FSBD/adult-1.png" alt="avatar-amazon" className="icono-avatar"/>                                            
+                    <img 
+                        src="https://m.media-amazon.com/images/G/02/CerberusPrimeVideo-FN38FSBD/adult-1.png" 
+                        alt="avatar-amazon" 
+                        className="icono-avatar"/>                                            
                     <p>Luis</p>
                 </div>                               
             </div>
