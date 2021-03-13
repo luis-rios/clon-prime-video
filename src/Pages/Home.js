@@ -1,8 +1,10 @@
 import Header from '../Components/Header';
+import Carousel from '../Components/Carousel';
 export default function Home(){
     return(
         <div>
             <Header/>
+            <Carousel/>
             <img 
                 src="https://m.media-amazon.com/images/S/sonata-images-prod/CROW_MX_PARAMOUNTPLUS_Two_Weeks_to_Live/bd73c577-43de-4f01-85f3-6687d85f74d2._UR3000,600_SX1500_FMjpg_.jpg" 
                 alt="Two weeks to live Temporada 1" 
