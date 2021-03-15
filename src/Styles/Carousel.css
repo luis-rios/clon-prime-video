@@ -1,3 +1,10 @@
+
+.carousel{
+    width: 100%;
+    height: 100%;
+
+}
+
 .contenedor{
 
     width: 100%;
@@ -7,72 +14,51 @@
     
 }
 
-.señor_de_los_anillos  {
+.peliculas {
 display: flex;
-
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
 width: 100%;
 height: 100%;
 background-size: cover;
 position: relative;
+
 }
 
-.señor_de_los_anillos::after{
+
+.peliculas::after{
     content: '';
     width: 100%;
     height: 100%;
-    background-color:rgba(65, 58, 58,.7);
+    background-color:rgba(65, 58, 58,.3);
     position: absolute;
-}
-
-
-.señor_de_los_anillos p h3{
-    color: white;
+    z-index: 1;
    
 }
 
 
-.piratas  {
-    display: flex;
-    
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    position: relative;
-    }
-    
-    .piratas::after{
-        content: '';
-        width: 100%;
-        height: 100%;
-        background-color:rgba(65, 58, 58,.7);
-        position: absolute;
-    }
-    
-    
-    .piratas p h3{
-        color: white;  
-    }
-    
-.harry {
-        display: flex;
-        
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        position: relative;
-        }
-        
-.harry::after{
-            content: '';
-            width: 100%;
-            height: 100%;
-            background-color:rgba(65, 58, 58,.7);
-            position: absolute;
-        }
-        
-        
-        
-.harry p h3{
-            color: white;
-           
-        }
+.peliculas h2{
+    padding-left: 350px;
+    color:brown;
+    z-index: 2;
+
+}
+
+.peliculas p{
+    padding-left: 340px;
+    color: rgb(37, 32, 32);
+    z-index: 2;
+}
+
+
+.peliculas h4{ 
+    padding-left: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(24, 20, 20);
+    font-size: small;
+    z-index: 2;
+}
+
+
+

@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*dispositivos de escritorio*/
+@media (max-width: 1200px){
+
+}
+
+/*dispositivos de escritorio larg*/
+@media (max-width: 992px){
+
+}
+
+/*dispositivos de escritorio*/
+@media (max-width: 768px){
+
+}

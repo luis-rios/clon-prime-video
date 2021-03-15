@@ -13,7 +13,7 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <Switch>
+      <Switch> 
 
         <Route exact path="/">
           <Home/>
