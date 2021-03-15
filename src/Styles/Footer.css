@@ -1,0 +1,32 @@
+.menu_footer{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    height: 66%;
+    color: white;
+    background-color: black;
+    padding-top:200%;
+    position: relative;
+    bottom: 0;
+
+}
+.contenedor{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+.contenedor:hover{
+    color: rgb(198, 237, 255);
+}
+.direccion{
+   color: white;
+   text-decoration: none;
+   font-family: sans-serif;
+
+}
+
+.direccion:hover{
+    color:rgb(198, 237, 255) ;
+}
