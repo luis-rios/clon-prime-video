@@ -1,22 +1,108 @@
-.imagen{
-    width: 100%;
-    height: 600px;
-    background-image: url("");
-    background-size: cover;
-    background-position: center;
-    background-position-x: 300px;
-    background-position-y: -600px;
-    position: relative;
+.Card-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    /* border: solid 3px skyblue; */
+    border-radius: 5px;
+    box-shadow: 2px solid;
+    
+
 }
-.imagen::after{
-    content: "";
+.Img-card{
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+}
+
+.Info-card{
+    display: flex; 
+    flex-wrap: wrap;   
+    width: 100%;
+    /* height: 50%; */
+    padding-top: 5px;
+    background-color: black;
+    position: relative;
+    opacity: 0;
+}
+.Card-container:hover .Info-card{
+    opacity: 1;
+    height: 50%;
+    transition: all 1s ease;
+    background-color: black;
+}
+.Card-container:hover{
+    border: solid 3px skyblue;
+}
+
+.Info-card .item:nth-child(1){
+    font-size: 40px;
+    margin-left: 15px;
+    padding-bottom: 15px;
+}
+.Info-card .item:nth-child(3){
+    
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-left: 90px;
+}
+.Info-card .item:nth-child(4){
+    
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    
+}
+.Info-card p{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+.Prime-label{
+    width: 70px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(0, 183, 255);
+    border: 5px solid black;
+    border-radius: 0px 20px 20px 0px;
+}
+.texto{
+    display: flex;    
+    flex-direction: column;
+    align-items: flex-start;    
     width: 100%;
     height: 100%;
-    background-color: rgba(65, 58, 58,.5);
-    z-index: 1;
-    position: absolute;
+    
 }
-.imagen p h1{
-    color: white;
-    z-index: 2;
+.texto h5{
+    color: rgb(0, 183, 255);
+    margin-left: 20px;
+    font-size: 15px;
+}
+.texto h3{    
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    margin-left: 20px;    
+}
+.texto h4{
+    color: rgb(255, 255, 255);
+    font-size: 13px;    
+    margin-left: 20px;
+}
+.texto p{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;    
+    margin-left: 7px;
+    
+    
+}
+.texto h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    width: 30px;
+    height: 90%;
+    font-size: 20px;
+    border: 2px solid white;
 }
