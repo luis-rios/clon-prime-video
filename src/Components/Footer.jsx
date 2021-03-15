@@ -13,7 +13,7 @@ export default function Footer(){
                 <p><a href="#"> Términos y Aviso de privacidad </a></p>
                 <p><a href="#"> Envianos tus comentarios</a></p>
                 <p><a href="#"> Ayuda</a></p>
-                <p>©2020-2021, Inc. o sus filiales</p>
+                <p>©2020-2021, ing.luisrios@gmail.com Inc. o sus filiales</p>
             </div>
         </div>
     )

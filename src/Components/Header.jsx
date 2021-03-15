@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 import '../Styles/Header.css'
@@ -10,20 +11,19 @@ export default function Header(){
             </div>
             <div className="Menu">
                 <ul>
-                    <li> <a href="#" className="item"> Inicio     </a>  </li>
-                    <li> <a href="#" className="item"> Tienda     </a>  </li>
-                    <li> <a href="#" className="item"> Canales    </a>  </li>
-                    <li> <a href="#" className="item"> Categorias
-                       {/*  <ul>
+                    <li> <Link to="/" className="item"> Inicio</Link></li>
+                    <li> <Link to="/Tienda" className="item"> Tienda  </Link></li>
+                    <li> <Link to="/Canales" className="item"> Canales</Link></li>
+                    <li> <Link to="/" className="item"> Categoria </Link>                    
+                        {/*  <ul>
                             <li>Series</li>
                             <li>Peliculas</li>
                             <li>Infantil</li>
                             <li>Se incluye con prime</li>
                             <li>Disponible para descargar</li>
                         </ul> */}
-                        </a>
-                    </li>
-                    <li> <a href="#" className="item"> Mi espacio </a></li>
+                    </li>                    
+                    <li><Link to="/MiEspacio" className="item"> Mi espacio</Link></li>
                 </ul>
             </div>
             <div className="Busqueda">
