@@ -40,23 +40,23 @@
     
 
 }
-.item{
+.Menu .item{
     display: flex;    
-    font-size: 17px;
-    color: rgb(238, 228, 228);
+    font-size: 25px;
+    color: rgb(221, 204, 204);
     padding-right: 10px;
 }
 
 .Busqueda{
-    display: flex;
-    width: 465px;
+    display: flex;    
+    width: 665px;
     height: 100%;    
-    background-color: rgb(238, 180, 180);    
+    background-color: rgb(243, 189, 189);    
 }
 .Search-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     height: 100%;
     width: 100%;
     background-color: black;

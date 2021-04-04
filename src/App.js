@@ -1,6 +1,8 @@
 import React from 'react';
 import Home from './Pages/Home';
 import Tienda from './Pages/Tienda';
+import Detail from './Pages/Detail';
+import Player from './Pages/Player';
 import Canales from './Pages/Canales';
 import MiEspacio from './Pages/Mi-espacio';
 import {
@@ -30,6 +32,14 @@ function App() {
         <Route exact path="/MiEspacio">
           <MiEspacio/>
         </Route>
+
+        <Route exact path="/Detail">
+          <Detail/>
+        </Route>
+
+        <Route exact path="/Player">
+          <Player/>
+        </Route>          
 
       </Switch>
     </Router>

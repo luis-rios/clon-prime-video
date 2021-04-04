@@ -6,9 +6,11 @@ import '../Styles/Header.css'
 export default function Header(){
     return (
         <div className="Header-Container">
-            <div className="Logo">
-                
-            </div>
+               <Link to="/">
+                    <div className="Logo">
+                        
+                    </div>
+               </Link>
             <div className="Menu">
                 <ul>
                     <li> <Link to="/" className="item"> Inicio</Link></li>
@@ -22,7 +24,7 @@ export default function Header(){
                             <li>Se incluye con prime</li>
                             <li>Disponible para descargar</li>
                         </ul> */}
-                    </li>                    
+                    </li>                                
                     <li><Link to="/MiEspacio" className="item"> Mi espacio</Link></li>
                 </ul>
             </div>

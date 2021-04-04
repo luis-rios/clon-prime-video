@@ -1,0 +1,138 @@
+.Detail-container{  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 750px;
+    background-color: #0f171e;
+    /*styles of detail*/
+    
+    padding-left: 60px;
+  
+    /*Css Image*/
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: 800px;
+    position: relative;
+    
+}
+.Detail-container::before{
+    content: "";
+    width: 95%;
+    height: 100%;
+    background-color: #0f171e90;
+    position: absolute;
+    z-index: 1;
+}
+.Detail-container p:nth-child(2){
+    display: flex;    
+    width: 500px;
+    color:  rgb(161, 161, 161);
+    justify-content: space-between;
+    z-index: 2;
+    font-size: 20px; 
+}
+.Detail-container p:nth-child(3){
+    display: flex;
+    width: 800px;
+    flex-wrap: wrap;
+    color: white;
+    z-index: 2;
+    font-size: 20px; 
+}
+.Detail-container span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 35px;
+    font-size: 18px;
+    border: 1px solid rgb(161, 161, 161);
+}
+.Detail-container h1{
+    padding-top: 20px;   
+    padding-bottom: 20px;   
+    font-size: 40px;
+    z-index: 2;   
+    color: white; 
+}
+.info{
+    display: flex;
+    width: 620px;
+    z-index: 2;    
+    
+}
+ .info ul li{
+    display: flex;   
+    justify-content: flex-start;
+    font-size: 20px;   
+    color: rgb(161, 161, 161);   
+}
+.info ul li h5{
+    color: white;
+    padding-left: 20px;
+}
+
+.Descripcion{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #0f171e90;
+    color: white;
+    margin-top: 100px;
+    justify-content: space-between;
+    z-index: 2;
+    font-size: 20px;  
+}
+.Terminos{
+    width: 50%;    
+    color: rgb(185, 175, 175);
+    font-size: 20px;
+    padding-top: 20px;
+}
+.Terminos a{
+    text-decoration: none;
+    color: rgba(48, 183, 245, 0.993);
+}
+.Terminos a:hover{
+    color: aqua;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+.Opciones{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    width: 50%;  
+    height: 100%;  
+    padding-bottom: 80px;
+    font-size: 25px;
+}
+.Opciones .item{
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    padding-right: 5px;
+    color:  rgb(199, 199, 199);
+}
+.item:hover{
+    transition: all 1s ease;
+    color: rgb(255, 255, 255);
+}
+.chat{
+    display: flex;
+    width: 500px;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    z-index: 2;
+}
+.chat button{
+    color: white;
+    width: 300px;
+    height: 100px;
+    font-size: 35px;
+    border-radius: 10px;
+    background-color: rgb(67, 129, 230);
+}
