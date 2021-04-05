@@ -1,3 +1,4 @@
+import React from 'react';
 import Details from '../Components/Detail';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';

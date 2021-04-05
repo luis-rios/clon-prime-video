@@ -1,8 +1,8 @@
+import React from 'react';
 import YouTube from 'react-youtube';
 import Header from '../Components/Header';
 import Fotter from '../Components/Footer';
 import '../Styles/Home.css';
-import React from 'react';
 export default class Player extends React.Component {
     render(){
         const opts = {

@@ -1,27 +1,34 @@
+import React from 'react';
 import Header from '../Components/Header';
+import Carousel from '../Components/Carousel';
+import CarouselSeries from '../Components/Carouselpys';
 import Footer from '../Components/Footer';
 import Card from '../Components/Card';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../Styles/Home.css';
 
-export default function Tienda(){
-    const[moviePay,setMoviePay] = useState([])
-    const getMoviePay = async ()=>{
-        const response = await axios.get("http://127.0.0.1:8000/peliculas/Pelicula/")
-        const movie = await response.data
-        setMoviePay(movie)
+export default function Home(){
+    const [pelicula, setPelicula] = useState([])
+    const obtenerPelicula = async ()=>{
+        
+            const response = await axios.get("http://127.0.0.1:8000/peliculas/Pelicula/")
+            const movie = await response.data
+            setPelicula(movie)
+        
     }
     useEffect(()=>{
-        getMoviePay()
+        obtenerPelicula()
     },[])
-    return (
-        <div className="Tienda-container">
+    return(
+        <div className="Home-container">
             <Header/>
-            <section className="card-tienda">            
+            <Carousel/>
+            {/* <CarouselSeries/> */}
+            <section className="card-tienda">
                 {
-                    moviePay.map((item)=>(
-                        <Card className="card-component"
+                    pelicula.map(item =>(
+                        <Card
                             key={item.id}
                             name={item.name}
                             description={item.description}
@@ -32,11 +39,12 @@ export default function Tienda(){
                             subtitles={item.subtitles}
                             creationDate={item.creationDate}
                             classification={item.classification}
-                            link={item.link}                            
+                            link={item.link}
                             direction={item.direction}
                             distribution={item.distribution}
                             categories={item.categories}
-                        />
+                        />            
+
                     ))
                 }
             </section>
