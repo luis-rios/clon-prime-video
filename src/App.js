@@ -33,11 +33,11 @@ function App() {
           <MiEspacio/>
         </Route>
 
-        <Route exact path="/Detail">
+        <Route exact path="/Detail/:id">
           <Detail/>
         </Route>
 
-        <Route exact path="/Player">
+        <Route exact path="/Player/:id">
           <Player/>
         </Route>          
 

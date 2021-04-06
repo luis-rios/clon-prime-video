@@ -5,10 +5,12 @@ import Card from '../Components/Card';
 import axios from 'axios';
 import '../Styles/Home.css';
 
+
 export default function Tienda(){
+    
     const[moviePay,setMoviePay] = useState([])
     const getMoviePay = async ()=>{
-        const response = await axios.get("http://127.0.0.1:8000/peliculas/Pelicula/")
+        const response = await axios.get("http://127.0.0.1:8000/peliculas/Pelicula")
         const movie = await response.data
         setMoviePay(movie)
     }
@@ -36,6 +38,7 @@ export default function Tienda(){
                             direction={item.direction}
                             distribution={item.distribution}
                             categories={item.categories}
+                            id={item.id}
                         />
                     ))
                 }

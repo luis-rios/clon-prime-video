@@ -37,7 +37,7 @@
     background-color: #0f171e;     
     opacity: 1;        
     width: 300px;
-    height: 300px;
+    height: 330px;
     border: solid 4px rgb(56, 185, 236);
     position: relative;
     
@@ -55,6 +55,9 @@
     font-size: 40px;
     margin-left: 15px;
     padding-bottom: 15px;
+}
+.Info-card .item:nth-child(1):hover{
+    color: rgb(56, 185, 236);
 }
 .Info-card .item:nth-child(3){
     

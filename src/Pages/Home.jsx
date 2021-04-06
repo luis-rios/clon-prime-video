@@ -25,6 +25,7 @@ export default function Home(){
             <Header/>
             <Carousel/>
             {/* <CarouselSeries/> */}
+            <p> <span>Clon</span> Peliculas que te recomendamos </p>            
             <section className="card-tienda">
                 {
                     pelicula.map(item =>(
@@ -43,11 +44,16 @@ export default function Home(){
                             direction={item.direction}
                             distribution={item.distribution}
                             categories={item.categories}
+                            id={item.id}
                         />            
 
                     ))
                 }
             </section>
+            <p> <span>Clon</span> Las series más vistas en Clon Video </p>
+            <p> <span>Clon</span> Películas añadidas recientemente </p>
+            <p> <span>Clon</span> Series que pensamos que te gustarán </p>
+            <p> <span>Clon</span> Películas infantiles y familiares </p>
             <Footer/>
         </div>
     )

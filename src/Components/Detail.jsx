@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {Link}    from 'react-router-dom';
 import { 
     faCommentAlt, 
     faDownload, 
@@ -27,7 +28,8 @@ export default class Detail extends Component{
             audioLanguages,
             duration,
             clasification,
-            link
+            id,
+            
         }=this.props
         return (
             <div className="Detail-container" style={{backgroundImage:`url(${image})`}}>
@@ -42,7 +44,7 @@ export default class Detail extends Component{
                     </p>
                     <p >{description}</p>
                     <div className="chat">
-                       <a href={link}> <button> <FontAwesomeIcon icon ={faPlay}/> Reproducir</button></a>
+                        <Link to={`/Player/${id}`}><button> <FontAwesomeIcon icon ={faPlay}/> Reproducir</button></Link>                        
                         <FontAwesomeIcon icon={faPlus}/>
                         <FontAwesomeIcon icon={faDrumstickBite}/>
                         <FontAwesomeIcon icon={faDownload}/>
