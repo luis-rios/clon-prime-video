@@ -49,7 +49,8 @@
 
 .Busqueda{
     display: flex;    
-    width: 665px;
+    justify-content: flex-end;
+    width: 50%;
     height: 100%;    
     background-color: rgb(243, 189, 189);    
 }
